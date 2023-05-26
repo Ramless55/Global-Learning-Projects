@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #2b3464;
+    --color2: #fff0c2;
+    --color3: #ff5f57;
+}
+
+.container {
+    position: relative;
+    border: 2rem solid black;
+    background-color: var(--color1);
+    height: 63rem;
+    width: 63rem;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container .circle {
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    background-color: var(--color2);
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+}
+
+.container .circle #triangle-big {
+    position: absolute;
+    background-color: var(--color3);
+    width: 30rem;
+    height: 30rem;
+    transform: rotate(45deg);
+    left: 7rem;
+    top: 15rem;
+}
+
+.container .circle #triangle-small {
+    position: absolute;
+    background-color: var(--color3);
+    width:  10rem;
+    height: 10rem;
+    transform: rotate(45deg);
+    right: 20rem;
+    top: 19rem;
+}

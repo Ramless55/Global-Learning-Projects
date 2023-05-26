@@ -1,0 +1,61 @@
+import './App.css'
+// import Button from './components/Button/Button'
+// import Display from './components/Display/Display'
+import Form from './components/Form/Form'
+import { useState } from 'react'
+
+function App() {
+//   const [count, setCount] = useState(0)
+  const [data, setData] = useState({
+    name: '',
+    password: ''
+  })
+
+  const [error, setError] = useState(false)
+
+  const account = {
+    name: 'ramiro',
+    password: 'ramiro'
+  }
+
+
+
+//   return (
+//     <div className='App'>
+//       <h1>Ejemplo de Botones</h1>
+//       <Button updateValue={setCount} increment={+1}/>
+//       <Button updateValue={setCount} increment={+2}/>
+//       <Button updateValue={setCount} increment={+10}/>
+//       <Button updateValue={setCount} increment={+50}/>
+//       <Button updateValue={setCount} increment={+100}/>
+//       <Button updateValue={setCount} increment={-100}/>
+//       <Display message={count}/>
+
+//       <Form setInfo={setData} user={data} account={account} setError={setError} error={error}></Form>
+//     </div>
+//   )
+
+  const logout = () => {
+    setData({
+      name: '',
+      password: ''
+    })
+    console.log('deslogeado')
+    setError(false);
+  }
+
+  return (
+    <div className='App'>
+      {(error) ? (
+      <div className='welcome'>
+        <h2>welcome <span>{data.name}</span></h2>
+        <button onClick={logout}>Logout</button>
+      </div>
+    ): (<Form setInfo={setData} user={data} account={account} setError={setError} error={error}></Form>)}
+    </div>
+  )
+}
+
+
+export default App
+

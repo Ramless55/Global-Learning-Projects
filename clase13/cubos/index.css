@@ -1,0 +1,43 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/db/33/7d/db337d0777cf64884c8f535a434d665e.gif");
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    border: 5px groove grey;
+    background-color: #653650;
+    height: 1000px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #ffc57c;
+}
+
+#box1 {
+    top: 100px;
+    left: 100px;
+}
+
+#box2 {
+    top: 100px;
+    right: 100px;
+}
+
+#box3 {
+    bottom: 100px;
+    left: 100px;
+}
+
+#box4 {
+    bottom: 100px;
+    right: 100px;
+}

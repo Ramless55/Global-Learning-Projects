@@ -1,0 +1,63 @@
+.container{
+    font-size: 1rem;
+    min-width: 15vw;
+    max-width: fit-content;
+    height: fit-content;
+    padding: 5vh;
+
+    display:relative;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    border-radius: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    color: #ac3a92;
+    margin-bottom: 8%;
+}
+
+#error-message {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: rgb(216, 0, 0);
+    margin-bottom: 2%;
+}
+
+input{
+    
+    width: 14rem;
+    height: 2.4rem;
+    border-radius: .7rem;
+    border: solid gray;
+    margin-bottom: 3%;
+    padding: 0 5%;
+}
+
+button{
+    width: 10vh;
+    height: 2.4rem;
+    border-radius: .7rem;
+    border: solid gray;
+}
+
+input:focus, button:hover{
+    border: solid black;
+    transition: all 0.5s;
+}
+
+#none {
+    display: none;
+}
+
+#green {
+    background-color: #8BE723;
+    border-color: black;
+    transition: all 1s;
+}

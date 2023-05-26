@@ -1,0 +1,36 @@
+h1 {
+    position: absolute;
+    background-color: orange;
+    animation: cualquierNombre 2s infinite;
+  }
+  
+  @keyframes cualquierNombre {
+    from {
+      top: 0;
+      background-color: orange;
+    }
+    10% {
+      top:30px;
+      background-color: red;
+    }
+    40% {
+      top: 70px;
+      background-color: purple;
+    }
+  
+    60% {
+      top: 10px;
+      background-color: pink;
+    }
+  
+    80% {
+      top: 100px;
+      background-color: blue;
+    }
+  
+    to {
+      top: 0;
+      background-color: orange;
+    }
+  }
+  

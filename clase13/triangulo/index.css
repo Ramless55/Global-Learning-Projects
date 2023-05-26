@@ -1,0 +1,28 @@
+body {
+    background-image: url("https://gatopardo.com/wp-content/uploads/2021/03/cinco_grandes_prioridades_poltica_econmica_rolando_cordera_enrique_provencio_gatopardo_213_twitter.gif");
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    background-color: #0c232a;
+    position: relative;
+    border: 5px groove grey;
+    height: 1000px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:hidden;
+}
+
+#box {
+    position: absolute;
+    background-color: #f3ac3c;
+    width: 500px;
+    height: 500px;
+    transform: rotate(45deg);
+    top: -250px;
+    left: -250px;
+}
